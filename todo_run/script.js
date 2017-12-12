@@ -53,3 +53,34 @@ function newElement() {
     }
   }
 }
+
+function newTask(){
+    var li = document.createElement("li");
+    var myNodelist_ = document.getElementsByTagName("LI");
+    	var inputValue = "";
+    if(myNodelist_.length<4){
+	inputValue = "10km走る";
+    }else if(myNodelist_.length<6){
+	inputValue = "5km走る";
+    }else if(myNodelist_.length<10){
+	inputValue = "2km走る";
+    }else{
+	inputValue = "休息を取る";
+    }
+    var t = document.createTextNode(inputValue);
+    li.appendChild(t);
+    document.getElementById("myUL").appendChild(li);
+    
+    var span = document.createElement("SPAN");
+    var txt = document.createTextNode("\u00D7");
+    span.className = "close";
+    span.appendChild(txt);
+    li.appendChild(span);
+    
+    for (i = 0; i < close.length; i++) {
+	close[i].onclick = function() {
+	    var div = this.parentElement;
+	    div.style.display = "none";
+	}
+    }
+}
