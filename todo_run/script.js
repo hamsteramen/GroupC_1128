@@ -58,14 +58,14 @@ function newTask(){
     var li = document.createElement("li");
     var myNodelist_ = document.getElementsByTagName("LI");
     	var inputValue = "";
-    if(myNodelist_.length<3){
+    if(myNodelist_.length<4){
 	inputValue = "10km走る";
     }else if(myNodelist_.length<6){
 	inputValue = "5km走る";
     }else if(myNodelist_.length<10){
 	inputValue = "2km走る";
     }else{
-	inputValue = "ゆっくり過ごす";
+	inputValue = "休息を取る";
     }
     var t = document.createTextNode(inputValue);
     li.appendChild(t);
