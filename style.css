@@ -4,7 +4,7 @@ h1,p,h2{
    margin: 0;
 }
 
-h2{
+p{
    padding-top:10px;
 }
 
@@ -15,9 +15,17 @@ div#myDIV{
    background-color:silver;
 }
 
-body{
+/*body{
    background-color:rgb(255,255,150)
 }
+*/
+body{
+   background-size: cover;
+   background-attachment: fixed;
+}
+
+
+
 
 ul li{
    list-style: inside circle;

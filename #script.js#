@@ -65,7 +65,7 @@ function newTask(){
     }else if(myNodelist_.length<10){
 	inputValue = "2km走る";
     }else{
-	inputValue = "ゆっくり過ごす";
+	inputValue = "休息を取る";
     }
     var t = document.createTextNode(inputValue);
     li.appendChild(t);
